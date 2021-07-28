@@ -1,0 +1,14 @@
+"sensor_id","sensor_name","sensor_description","sensor_type","sensor_ucl","sensor_lcl","sensor_created_date","sensor_modified_date","sensor_state","sensor_llcl","sensor_uucl","sensor_alert_active","sensor_critical_active","sensor_uom","sensor_lspec","sensor_uspec","sensor_report_id","sensor_register","device_name_id","sensor_order_id","sensor_tolerance","sensor_show_matrix"
+24,New cold room temperature [2],"",Temperature,,,"2021-03-27 21:06:43.574897000","2021-03-28 11:17:00.330146000",active,,,0,0,°C,,,1,3,9,1,5.0,1
+25,WIP temperature probe,"",Temperature,,,"2021-03-28 11:18:28.285837000","2021-04-21 09:52:36.092212000",active,,,0,0,°C,,,1,1,9,2,10.0,1
+26,WIP cold room temperature [2],"",Temperature,,,"2021-03-28 11:19:22.187758000","2021-04-21 09:52:18.396540000",active,,,0,0,°C,,,1,2,9,3,10.0,1
+27,High-risk prep temperature,"",Temperature,,,"2021-03-28 11:20:35.748534000","2021-03-28 11:20:35.748680000",active,,,0,0,°C,,,1,1,10,4,5.0,1
+28,Low-risk prep temperature,"",Temperature,,,"2021-03-28 11:21:13.365155000","2021-03-28 11:21:13.365253000",active,,,0,0,°C,,,1,2,10,5,5.0,1
+29,WIP cold room temperature [1],"",Temperature,8.5,0.0,"2021-03-28 11:21:42.891440000","2021-03-30 10:30:42.631335000",active,-2.0,10.0,1,1,°C,0.0,5.0,1,3,10,6,5.0,1
+30,Dispatch cold room temperature,"",Temperature,8.5,0.0,"2021-03-28 11:22:12.671387000","2021-04-21 09:52:51.067454000",active,-2.0,10.0,1,1,°C,0.0,5.0,1,4,10,7,10.0,1
+31,External temperature,"",Temperature,,,"2021-03-28 11:22:35.509809000","2021-03-28 11:22:35.509904000",active,,,0,0,°C,,,1,5,10,8,5.0,1
+32,New cold room temperature [2],"",Temperature,,,"2021-03-28 11:23:06.673252000","2021-03-28 11:23:06.673420000",active,,,0,0,°C,,,1,6,10,9,5.0,1
+33,Office humidity,"",Humidity,,,"2021-03-28 11:23:46.332062000","2021-03-28 11:23:46.332153000",active,,,0,0,%,,,1,7,10,10,5.0,1
+34,Office temperature,"",Temperature,,,"2021-03-28 11:24:09.673355000","2021-03-28 11:24:09.673485000",active,,,0,0,°C,,,1,8,10,11,5.0,1
+35,WIP cold room power,"",Current,,,"2021-03-28 11:25:07.322479000","2021-03-30 10:33:12.104369000",active,0.5,,1,1,A,,,1,2,11,12,5.0,1
+36,Dispatch cold room power,"",Current,,,"2021-03-28 11:25:26.803192000","2021-03-30 10:34:18.990978000",active,0.5,,0,1,A,,,1,1,11,13,5.0,1

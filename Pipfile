@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+jupyter = "*"
+jupyter-contrib-nbextensions = "*"
+pandas = "*"
+matplotlib = "*"
+ipykernel = "*"
+tensorflow = "*"
+seaborn = "*"
+plotly = "*"
+
+[dev-packages]
+black = "*"
+bandit = "*"
+pylint = "*"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
