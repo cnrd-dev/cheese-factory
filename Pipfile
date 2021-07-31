@@ -12,6 +12,8 @@ ipykernel = "*"
 tensorflow = "*"
 seaborn = "*"
 plotly = "*"
+sqlalchemy = "*"
+statsmodels = "*"
 
 [dev-packages]
 black = "*"
