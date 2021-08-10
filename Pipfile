@@ -14,6 +14,8 @@ seaborn = "*"
 plotly = "*"
 sqlalchemy = "*"
 statsmodels = "*"
+pantab = "*"
+numpy = "*"
 
 [dev-packages]
 black = "*"
