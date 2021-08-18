@@ -14,8 +14,11 @@ seaborn = "*"
 plotly = "*"
 sqlalchemy = "*"
 statsmodels = "*"
-pantab = "*"
 numpy = "*"
+scikit-learn = "*"
+xgboost = "*"
+colorlover = "*"
+shap = "*"
 
 [dev-packages]
 black = "*"
