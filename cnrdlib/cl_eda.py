@@ -64,40 +64,8 @@ def plot_hist(cols: list, data: pd.DataFrame) -> None:
     fig.show()
 
 
-def plot_graphs(x1: pd.Series, x2: pd.Series, df: pd.DataFrame, feature: str, title: str) -> None:
-    """Generate histogram and box plots to compare APC off versus APC on.
-
-    Args:
-        x1 (pd.Series): Series for APC off data.
-        x2 (pd.Series): Series for APC on data.
-        df (pd.DataFrame): Dataframe containing the data.
-        feature (str): Column name of the feature to use in the dataframe.
-        title (str): Title of the plot.
-    """
-    fig = go.Figure()
-    fig = make_subplots(rows=1, cols=2)
-
-    fig.add_trace(go.Histogram(x=x1, name="APC OFF", xbins=dict(size=hist_bin_width_fd(df[feature])), histnorm="probability", marker=dict(color="rgba(198,12,48,0.5)")), row=1, col=1)
-    fig.add_trace(go.Histogram(x=x2, name="APC ON", xbins=dict(size=hist_bin_width_fd(df[feature])), histnorm="probability", marker=dict(color="rgba(0,39,118,0.5)")), row=1, col=1)
-
-    fig.add_trace(go.Box(y=x1, name="APC OFF", boxmean="sd", fillcolor="rgba(198,12,48,0.5)", marker=dict(color="rgba(198,12,48,0.5)")), row=1, col=2)
-    fig.add_trace(go.Box(y=x2, name="APC ON", boxmean="sd", fillcolor="rgba(0,39,118,0.5)", marker=dict(color="rgba(0,39,118,0.5)")), row=1, col=2)
-
-    fig["layout"].update(
-        title="<b>" + title + "</b><br>Date range: " + str(min(x1.index)) + " to " + str(max(x1.index)) + "</i>",
-        font=dict(size=9),
-        margin=dict(l=60, r=60, t=60, b=60),
-        annotations=[
-            dict(x=0, y=-0.2, showarrow=False, text="The mean is represented by the dashed horizontal line and the standard deviation by the dashed diamond shape.", xref="paper", yref="paper")
-        ],
-        barmode="overlay",
-        showlegend=False,
-    )
-    fig.show(renderer="notebook")
-
-
-def plot_timeseries(df: pd.DataFrame, y_traces: list, title: str, x_trace: str = "", use_index: bool = True) -> None:
-    """Plot timeseries data from dataframe using plotly library.
+def plot_timeseries_plotly(df: pd.DataFrame, y_traces: list, title: str = "", x_trace: str = "", use_index: bool = True) -> None:
+    """Plot timeseries data from dataframe using plotly library for interactive graphs.
 
     Args:
         df (pd.DataFrame): Dataframe containing the data.
@@ -124,3 +92,26 @@ def plot_timeseries(df: pd.DataFrame, y_traces: list, title: str, x_trace: str =
 
     fig["layout"].update(title="<b>" + title + "</b>")
     fig.show(renderer="notebook")
+
+
+def plot_timeseries_static(df: pd.DataFrame, y1: str, y2: str, title: str = "") -> None:
+    """Plot timeseries data from dataframe for static graphs.
+
+    Args:
+        df (pd.DataFrame): Dataframe containing the data.
+        y1 (str): Label for the primary y-axis.
+        y2 (str): Label for the secondary y-axis.
+        title (str): Title for the plot.
+    """
+    fig, ax1 = plt.subplots()
+
+    ax2 = ax1.twinx()
+    ax1.plot(df.index, df[y1])
+    ax2.plot(df.index, df[y2], color="red")
+
+    ax1.set_ylabel(y1)
+    ax2.set_ylabel(y2)
+
+    fig.suptitle(title)
+
+    plt.show()
