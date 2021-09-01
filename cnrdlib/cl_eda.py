@@ -115,3 +115,18 @@ def plot_timeseries_static(df: pd.DataFrame, y1: str, y2: str, title: str = "") 
     fig.suptitle(title)
 
     plt.show()
+
+
+def plot_anomaly(seq: int, timesteps: int, xtest: np.array, xtestpred: np.array) -> None:
+    """Plot timeseries sequence with reconstruction and error.
+
+    Args:
+        seq (int): Sequence to plot.
+        timesteps (int): Timesteps used in the model.
+        xtest (nd.array): Test
+    """
+    plt.plot(xtest[seq], "b")
+    plt.plot(xtestpred[seq], "r")
+    plt.fill_between(np.arange(timesteps), np.squeeze(xtestpred[seq]), np.squeeze(xtest[seq]), color="lightcoral")
+    plt.legend(labels=["Input", "Reconstruction", "Error"])
+    plt.show()
