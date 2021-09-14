@@ -6,20 +6,20 @@ A small cheese factory has recently implemented an IoT solution to provide real-
 
 Reduce nuisance alarms when monitoring refrigeration temperature and use the power consumption data to determine energy saving opportunities.
 
-Three key business questions
+Three key business questions:
 
 1. How can we better implement refrigeration temperature monitoring to avoid nuisance alarms due to defrosting cycles?
 1. What is the current energy performance of the refrigeration system?
 1. What are the potential energy savings?
 
-This Data Science project is using anomaly detection for refrigeration temperature monitoring and regression models to determine energy performance of the refridgeration system. I have written a [blog post]() on Medium which gives an overview of the project and discusses the results.
+This Data Science project is using anomaly detection for refrigeration temperature monitoring and regression models to determine energy performance of the refrigeration system. I have written a [blog post]() on Medium which gives an overview of the project and discusses the results.
 
 ## Optimisation process
 
-- Define the business problems
+- Define the business problems to be solved
 - Build data ingestion pipeline for analysis and training models
 - Perform EDA & ML to build the appropriate models
-- Develop and API for deployment to integrate with the real-time monitoring system
+- Develop and API for deployment to integrate with the real-time monitoring system (phase 2)
 
 ## File descriptions
 
@@ -32,10 +32,6 @@ This Data Science project is using anomaly detection for refrigeration temperatu
 ## How to run the notebooks
 
 Dependencies and virtual environment details are located in the `Pipfile` which can be used with `pipenv`.
-
-## How to run the web app
-
-Run `python run.py` in the app directory to start the web app and simulator. Go to http://0.0.0.0:3001/
 
 ## License
 
