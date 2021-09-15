@@ -12,7 +12,7 @@ Three key business questions:
 1. What is the current energy performance of the refrigeration system?
 1. What are the potential energy savings?
 
-This Data Science project is using anomaly detection for refrigeration temperature monitoring and regression models to determine energy performance of the refrigeration system. I have written a [blog post]() on Medium which gives an overview of the project and discusses the results.
+This Data Science project is using anomaly detection for refrigeration temperature monitoring and regression models to determine energy performance of the refrigeration system. I have written a [blog post](https://medium.com/@coenraad-pretorius/5e9cccc63c3f) on Medium which gives an overview of the project and discusses the results.
 
 ## Optimisation process
 
