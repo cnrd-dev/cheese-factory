@@ -1,7 +1,7 @@
 """
-Custom library for data analysis.
+Custom library for Exploratory Data Analysis.
 
-Functions for descriptive statistics and regression analysis.
+Functions for descriptive statistics and plots.
 """
 
 from typing import Tuple

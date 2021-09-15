@@ -1,4 +1,4 @@
-# Small Cheese Factory Optimisation
+# Making better cheese with IoT and ML
 
 A small cheese factory has recently implemented an IoT solution to provide real-time monitoring of their refrigeration system. The system measures temperature inside the cold room, the ambient temperature and the power consumption of the refrigeration unit. Instead of manually taking spot measurement every few hours for quality control, the real-time temperature is now captured automatically every 30 to 60 seconds which provides more consistent monitoring. Alarms are sent out if the temperature exceeds the upper or lower limits, however, the refrigeration system includes an automatic defrost cycle which causes some nuisance alarms.
 

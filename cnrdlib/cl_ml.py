@@ -1,7 +1,7 @@
 """
-Custom library for data analysis.
+Custom library for Machine Learning.
 
-Functions for descriptive statistics and regression analysis.
+Functions for descriptive regression analysis.
 """
 
 from typing import Tuple
